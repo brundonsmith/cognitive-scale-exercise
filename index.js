@@ -12,18 +12,16 @@ var oneDay = 8.64e+7;
 
 // static resources needed by Angular
 app.use(express.static( __dirname + '/', { maxAge: oneDay }));
-/*
-app.use(express.static( 'index.html', { maxAge: oneDay }));
-app.use(express.static( 'systemjs.config.js', { maxAge: oneDay }));
-app.use(express.static( 'node_modules', { maxAge: oneDay }));
-app.use(express.static( 'app', { maxAge: oneDay }));
-*/
 
 // api
 app.post('/api/character', function(req, res) {
 });
 app.get('/api/submitted-characters', function(req, res) {
 });
+
+// NOTE: In a production application, we'd likely want to separate the API
+// server from the web server for scalability of both performance and the
+// codebase
 
 // load the app
 app.get('/', function(req, res) {

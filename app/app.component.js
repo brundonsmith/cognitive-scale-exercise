@@ -14,9 +14,9 @@ var AppComponent = (function () {
     }
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'character-counter',
-            templateUrl: 'view-home.component.html',
-            styleUrls: ['view-home.component.css']
+            selector: 'app',
+            templateUrl: 'app/app.component.html',
+            styleUrls: ['app/app.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
