@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Brandon Smith",
   "license": "ISC",
+  "repository": "git@github.com:brundonsmith/cognitive-scale-exercise.git",
   "scripts": {
     "dev": "tsc && concurrently \"npm run tsc:w\" \"npm start\" ",
     "lite": "lite-server",
