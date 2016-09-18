@@ -1,1 +1,8 @@
-<h1>Hello world!</h1>
+
+<div class="container">
+  <characters-input (charactersSubmitted)="refreshCounts($event)"></characters-input>
+  <div class="shapes">
+    <div *ngFor="let charInfo of charactersSubmittedByMe" class="character-shape" [style.backgroundColor]="charInfo.color">{{charInfo.character}}</div>
+  </div>
+  <graph #characterCountsDisplay></graph>
+</div>
