@@ -1,0 +1,5 @@
+
+<div *ngFor="let char of characters" class="character-bar">
+  <div class="bar" [style.height]="characterInfo[char].height" [style.background]="characterInfo[char].color">{{characterInfo[char].count}}</div>
+  <div class="character">{{'"' + char + '"'}}</div>
+</div>
